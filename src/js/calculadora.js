@@ -22,7 +22,13 @@ let Calculadora = {
     }
     return num1 / num2; 
   },
-  multiplicar: (num1, num2) => { return 0; } 
+  multiplicar: (num1, num2) => { 
+    if(isNaN(num1) || isNaN(num2)){
+      return 0;
+    }else{
+      return num1 * num2; 
+    }
+  } 
 };
 
 //Usado na função 'require' do NodeJS
