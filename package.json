@@ -1,0 +1,31 @@
+{
+  "name": "calculadora-js",
+  "version": "1.0.0",
+  "description": "Calculadora do curso de teste com jasmine",
+  "main": "index.js",
+  "scripts": {
+    "test-jasmine": "jasmine",
+    "test-dev": "karma start",
+    "test": "karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leite-gilcimar/calculadora-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leite-gilcimar/calculadora-js/issues"
+  },
+  "homepage": "https://github.com/leite-gilcimar/calculadora-js#readme",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "jasmine": "^3.8.0",
+    "karma": "^6.3.4",
+    "karma-browserify": "^8.0.0",
+    "karma-firefox-launcher": "^2.1.1",
+    "karma-jasmine": "^4.0.1",
+    "watchify": "^3.11.1"
+  }
+}
