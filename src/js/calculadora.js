@@ -6,7 +6,13 @@ let Calculadora = {
       return Number(num1) + Number(num2); 
     }
   },
-  subtrair: (num1, num2) => { return 0; },
+  subtrair: (num1, num2) => { 
+    if(isNaN(num1) || isNaN(num2)){
+      return 0;
+    }else{
+      return num1 - num2; 
+    }
+  },
   dividir: (num1, num2) => { return 0; },
   multiplicar: (num1, num2) => { return 0; } 
 };

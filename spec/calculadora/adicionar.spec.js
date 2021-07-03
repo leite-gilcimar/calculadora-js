@@ -1,6 +1,6 @@
 describe("Suite de teste de adição", () => {
 
-  let calculadora = require('../../src/js/calculadora.js');
+  const calculadora = require('../../src/js/calculadora.js');
 
   it("Deve retornar 5 para 2 e 3", () => {
     expect(calculadora.adicionar(2,3)).toEqual(5);
@@ -17,7 +17,7 @@ describe("Suite de teste de adição", () => {
   it("Deve retornar 0 quando o valor 1 não for numérico", () => {
     expect(calculadora.adicionar(undefined, 10)).toEqual(0);
   });
-  
+
   it("Deve retornar 0 quando o valor 2 não for numérico", () => {
     expect(calculadora.adicionar(10, undefined)).toEqual(0);
   })
